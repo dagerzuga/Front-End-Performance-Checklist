@@ -448,7 +448,7 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
     * 🛠 [Online JavaScript Compressor](http://refresh-sf.com)
     * 📖 [Short read: How is HTTP/2 different? Should we still minify and concatenate?](https://scaleyourcode.com/blog/article/28)
 
-* [ ] **Sin JavaScript dentro:** ![medium] * (Solo válido para sitios web) * Evite tener varios códigos JavaScript incrustados en el medio del body. Reagrupe su código JavaScript dentro de archivos externos o eventualmente en el `<head>` o al final de su página (antes de `</ body>`).
+* [ ] **Sin JavaScript dentro:** ![medium]  *(Solo válido para sitios web)* Evite tener varios códigos JavaScript incrustados en el medio del body. Reagrupe su código JavaScript dentro de archivos externos o eventualmente en el `<head>` o al final de su página (antes de `</ body>`).
 
     *¿Por qué?:*
     > Colocar el código incrustado de JavaScript directamente en el `<body>` puede ralentizar la página porque se carga mientras se construye el DOM. La mejor opción es usar archivos externos con `async` o` defer` para evitar bloquear el DOM. Otra opción es colocar algunos scripts dentro del `<head>`. La mayoría de las veces, el código de análisis o el pequeño script que se debe cargar antes de que el DOM llegue al procesamiento principal.
@@ -494,10 +494,10 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
 - [ ] **Comprobar el límite de tamaño de dependencias:** ![low] Asegúrese de usar sabiamente bibliotecas externas, la mayoría de las veces, puede usar una biblioteca más liviana para una misma funcionalidad.
 
     *¿Por qué?:*
-    > Puede sentir la tentación de usar uno de los 745 000 paquetes que puede encontrar en [npm] (https://www.npmjs.com/), pero debe elegir el mejor paquete para sus necesidades. Por ejemplo, MomentJS es una biblioteca increíble, pero con muchos métodos que quizás nunca utilices, es por eso que se creó Day.js. Es solo 2kB frente a los 16.4kB gz de Moment.
+    > Puede sentir la tentación de usar uno de los 745 000 paquetes que puede encontrar en [npm](https://www.npmjs.com/), pero debe elegir el mejor paquete para sus necesidades. Por ejemplo, MomentJS es una biblioteca increíble, pero con muchos métodos que quizás nunca utilices, es por eso que se creó Day.js. Es solo 2kB frente a los 16.4kB gz de Moment.
 
     *¿Cómo?:*
-    > Siempre compare y elija la mejor y más ligera biblioteca para sus necesidades. También puede usar herramientas como [[npm trends] (http://www.npmtrends.com/) para comparar recuentos de descargas de paquetes de NPM o [Bundlephobia] (https://bundlephobia.com/) para conocer el tamaño de sus dependencias.
+    > Siempre compare y elija la mejor y más ligera biblioteca para sus necesidades. También puede usar herramientas como [npm trends](http://www.npmtrends.com/) para comparar recuentos de descargas de paquetes de NPM o [Bundlephobia](https://bundlephobia.com/) para conocer el tamaño de sus dependencias.
 
     * 🛠 [ai/size-limit: Prevent JS libraries bloat. If you accidentally add a massive dependency, Size Limit will throw an error.](https://github.com/ai/size-limit)
     * 🛠 [webpack-bundle-analyzer - npm](https://www.npmjs.com/package/webpack-bundle-analyzer)
@@ -533,7 +533,7 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
 - [ ] **Tu sitio web utiliza HTTPS:** ![high] 
 
     *¿Por qué?:*
-    > HTTPS no es solo para un ecommerce, sino para todos los sitios web que intercambian datos. Datas compartidas por un usuario o datos compartidos con una entidad externa. Los navegadores modernos de hoy limitan las funcionalidades para los sitios que no son seguros. Por ejemplo: la geolocalización, las notificaciones push y los trabajadores del servicio no funcionan si su instancia no usa HTTPS. Y hoy es mucho más fácil configurar un proyecto con un certificado SSL que antes (y de forma gratuita, gracias a [Let's Encrypt] (https://letsencrypt.org/)).
+    > HTTPS no es solo para un ecommerce, sino para todos los sitios web que intercambian datos. Datas compartidas por un usuario o datos compartidos con una entidad externa. Los navegadores modernos de hoy limitan las funcionalidades para los sitios que no son seguros. Por ejemplo: la geolocalización, las notificaciones push y los trabajadores del servicio no funcionan si su instancia no usa HTTPS. Y hoy es mucho más fácil configurar un proyecto con un certificado SSL que antes (y de forma gratuita, gracias a [Let's Encrypt](https://letsencrypt.org/).
 
  * 📖 [Why Use HTTPS? | Cloudflare](https://www.cloudflare.com/learning/security/why-use-https/)
  * 📖 [Enabling HTTPS Without Sacrificing Your Web Performance - Moz](https://moz.com/blog/enabling-https-without-sacrificing-web-performance)
@@ -687,7 +687,7 @@ Este proyecto existe gracias a todas las personas que contribuyen. [[Contribuir]
 
 ## Patrocinadores
 
-Apoya este proyecto convirtiéndote en un patrocinador. Tu logo aparecerá aquí con un enlace a tu sitio web. [[Conviértete en patrocinador] (https://opencollective.com/front-end-checklist#sponsor)]
+Apoya este proyecto convirtiéndote en un patrocinador. Tu logo aparecerá aquí con un enlace a tu sitio web. [[Conviértete en patrocinador](https://opencollective.com/front-end-checklist#sponsor)]
 
 <a href="https://opencollective.com/front-end-checklist/sponsor/0/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/front-end-checklist/sponsor/1/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/1/avatar.svg"></a>
