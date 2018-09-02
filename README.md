@@ -3,12 +3,13 @@
   <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist"><img src="https://raw.githubusercontent.com/thedaviddias/Front-End-Performance-Checklist/master/images/logo-front-end-performance-checklist.jpg" alt="Front-End Performance Checklist" width="170"></a>
   <br>
     <br>
-  Front-End Performance Checklist
+  Lista de requerimientos para el rendimiento front-end
   <br>
 </h1>
 
-<h4 align="center">🎮 The only Front-End Performance Checklist that runs faster than the others.</h4>
-<p align="center">One simple rule: "Design and code with performance in mind"</p>
+<h4 align="center">🎮 La única lista de requerimientos para el rendimiento del front-end que corre más rápido que otras.</h4>
+<h4 align="center">🎮 </h4>
+<p align="center">Una regla simple: “Diseña y programa con rendimiento en mente”</p>
 
 <p align="center">
   <a href="http://makeapullrequest.com">
@@ -23,7 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="#how-to-use">How To Use</a> • <a href="#contributing">Contributing</a> • <a href="http://feedback.frontendchecklist.io/">Roadmap</a> • <a href="https://www.producthunt.com/posts/front-end-performance-checklist">Product Hunt</a>
+  <a href="#how-to-use">Cómo utilizar</a> • <a href="#contributing">Contribuyendo</a> • <a href="http://feedback.frontendchecklist.io/">Mapa del camino</a> • <a href="https://www.producthunt.com/posts/front-end-performance-checklist">Product Hunt</a>
 </p>
 
 <p align="center">
@@ -35,70 +36,70 @@
 </p>
 
 <p align="center">
-    <span>Other Checklists:</span>
+    <span>Otras listas de requerimientos:</span>
     <br>
-  🗂 <a href="https://github.com/thedaviddias/Front-End-Checklist#---------front-end-checklist-">Front-End Checklist</a> • 💎 <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">Front-End Design Checklist</a>
+  🗂 <a href="https://github.com/thedaviddias/Front-End-Checklist#---------front-end-checklist-">Lista de requerimientos para front-end</a> • 💎 <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">Lista de requerimientos para diseño front-end</a>
 </p>
 
-## Table of Contents
+## Tabla de contenidos
 
 1. **[HTML](#html)**
 2. **[CSS](#css)**
 3. **[Fonts](#fonts)**
-4. **[Images](#images)**
+4. **[Imágenes](#images)**
 5. **[JavaScript](#javascript)**
-6. **[Server](#server) (in progress)**
-7. **[JS Frameworks](#performances-and-js-frameworks) (in progress)**
+6. **[Server](#server) (en progreso)**
+7. **[Frameworks JS](#performances-and-js-frameworks) (en progreso)**
 
-## Introduction
+## Introducción
 
-Performance is a huge subject, but it's not always a "back-end" or an "admin" subject: it's a Front-End responsibility too. The Front-End Performance Checklist is an exhaustive list of elements you should check or at least be aware of, as a Front-End developer and apply to your project (personal and professional).
+El rendimiento es un tema amplio, pero no es siempre un tema del lado del back-end o del administrador. También es responsabilidad del front-end. La lista de requerimientos para el rendimiento front-end, es una lista exhaustiva de elementos que deberías revisar, o al menos ser consciente de ellos, como desarrollador front-end y aplicarla a tu proyecto (personal y profesional).
 
-### How to use?
+### ¿Cómo utilizarla?
 
-For each rule, you will have a paragraph explaining *why* this rule is important and *how* you can fix it. For more deep information, you should find links that will point to 🛠 tools, 📖 articles or 📹 medias that can complete the checklist.
+Para cada regla, tendrás un párrafo explicando *el porqué* de la importancia de esta regla y *cómo* puedes arreglarla. Para información más detallada puedes encontrar links que te enviarán a 🛠 herramientas, 📖 artículos o 📹 contenido multimedia que puede completar la lista de requerimientos.
 
-All items in the **Front-End Performance Checklist** are essentials to achieve the highest performance score but you would find an indicator to help you to eventually prioritised some rules amount others. There are 3 levels of priority:
+Todos los elementos en **la lista de requerimientos para el rendimiento front-end** son esenciales para lograr el mayor porcentaje de rendimiento, pero encontrarás un indicador para ayudarte a eventualmente priorizar unas reglas sobre otras:
 
-* ![Low][low] means that the item has a **low** priority.
-* ![Medium][medium] means that the item has a **medium** priority. You shouldn't avoid tackling that item.
-* ![High][high] means that the item has a **high** priority. You can't avoid following that rule and implement the corrections recommended.
+* ![Low][low] significa que el elemento es de prioridad **baja**.
+* ![Medium][medium] significa que el elemento es de prioridad **media**. No deberías evitar abordar dicho elemento.
+* ![High][high] significa que el elemento tiene una prioridad **alta**. No puedes evitar seguir dicha regla e implementar las correcciones recomendadas.
 
-### Performance tools
+### Herramientas de rendimiento
 
-List of the tools you can use to test or monitor your website or application:
+Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o aplicación:
 
- * 🛠 [WebPagetest - Website Performance and Optimization Test](https://www.webpagetest.org/)
- * 🛠 ☆ [Dareboost: Website Speed Test and Website Analysis](https://www.dareboost.com/) (use the coupon WPCDD20 for -20%)
- * 🛠 [Treo: Page Speed Monitoring](https://treo.sh/?ref=perfchecklist)
- * 🛠 [GTmetrix | Website Speed and Performance Optimization](https://gtmetrix.com/)
+ * 🛠 [WebPagetest - Prueba de optimización y rendimiento del sitio web](https://www.webpagetest.org/)
+ * 🛠 ☆ [Dareboost: Prueba de velocidad y análisis del sitio web](https://www.dareboost.com/) (usa el cupón WPCDD20 para un -20%)
+ * 🛠 [Treo: Control de velocidad de página](https://treo.sh/?ref=perfchecklist)
+ * 🛠 [GTmetrix | Optimización de velocidad y rendimiento del sitio web](https://gtmetrix.com/)
  * 🛠 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
- * 🛠 [Pingdom Website Speed Test](https://tools.pingdom.com)
- * 📖 [Pagespeed - The tool and optimization guide](https://varvy.com/pagespeed/)
- * 📖 [Make the Web Faster | Google Developers](https://developers.google.com/speed/)
- * 🛠 [Sitespeed.io - Welcome to the wonderful world of Web Performance](https://www.sitespeed.io/)
+ * 🛠 [Prueba de velocidad del sitio Pingdom](https://tools.pingdom.com)
+ * 📖 [Pagespeed - La herramienta y la guía de optimización](https://varvy.com/pagespeed/)
+ * 📖 [Haz más rápida la web | Google Developers](https://developers.google.com/speed/)
+ * 🛠 [Sitespeed.io - Bienvenido al maravilloso mundo del rendimiento web](https://www.sitespeed.io/)
  * 🛠 [Calibre](https://calibreapp.com/)
- * 🛠 [Website Speed Test | Check Web Performance &raquo; Dotcom-Tools](https://www.dotcom-tools.com/website-speed-test.aspx)
- * 🛠 [Website and Server Uptime Monitoring - Pingdom](https://www.pingdom.com/product/uptime-monitoring/) ([Free Signup Link](https://www.pingdom.com/free))
- * 🛠 [Uptime Robot](https://uptimerobot.com)
- * 🛠 [SpeedCurve: Monitor front-end performance](https://speedcurve.com)
- * 🛠 [PWMetrics - CLI tool and lib to gather performance metrics](https://github.com/paulirish/pwmetrics)
- * 🛠 [Varvy - Page speed optimization]( https://varvy.com/pagespeed/)
+ * 🛠 [Prueba de velocidad del sitio web | Verificación del rendimiento web &raquo; Dotcom-Tools](https://www.dotcom-tools.com/website-speed-test.aspx)
+ * 🛠 [Monitoreo de actividad del sitio web y del servidor - Pingdom](https://www.pingdom.com/product/uptime-monitoring/) ([Free Signup Link](https://www.pingdom.com/free))
+ * 🛠 [Robot de tiempo de actividad](https://uptimerobot.com)
+ * 🛠 [SpeedCurve: Monitor de rendimiento front-end](https://speedcurve.com)
+ * 🛠 [PWMetrics - Herramienta CLI y librería para recopilar métricas de rendimiento](https://github.com/paulirish/pwmetrics)
+ * 🛠 [Varvy - Optimización de velocidad de la página]( https://varvy.com/pagespeed/)
  * 🛠 [Lighthouse - Google]( https://developers.google.com/web/tools/lighthouse/#devtools)
- * 🛠 [Checkbot browser extension - Checks for web performance best practices](https://www.checkbot.io/)
- * 🛠 [Yellow Lab Tools | Online test to help speeding up heavy web pages](https://yellowlab.tools/)
+ * 🛠 [Checkbot browser extension - Verifica las mejores prácticas de rendimiento web](https://www.checkbot.io/)
+ * 🛠 [Yellow Lab Tools | Prueba en línea para ayudar a acelerar páginas web pesadas](https://yellowlab.tools/)
 
-### References
+### Referencias (inglés)
 
- * 📹 [The Cost Of JavaScript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4) ([text version](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4))
- * 📖 [Get Started With Analyzing Runtime Performance  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)
- * 📖 [State of the Web | 2018_01_01](https://httparchive.org/reports/state-of-the-web?start=2018_01_01)
- * 📖 [Page Weight Doesn't Matter](https://www.speedshop.co/2015/11/05/page-weight-doesnt-matter.html)
- * 📖 [Front-End Performance Checklist 2018 [PDF, Apple Pages]](https://www.smashingmagazine.com/2018/01/front-end-performance-checklist-2018-pdf-pages/)
- * 📖 [Designing for Performance Weighing Aesthetics and Speed - By Lara Callender Hogan [eBook, Print]](http://designingforperformance.com/index.html)
- * 📖 [Varvy - Web performance glossary](https://varvy.com/performance/)
- * 📖 [fabkrum/web-performance-resources: Up to date collection of valuable web performance resources](https://github.com/fabkrum/web-performance-resources)
- * 📖 [Checkbot - Web Speed Best Practices](https://www.checkbot.io/guide/speed/)
+ * 📹 [El costo de JavaScript - YouTube](https://www.youtube.com/watch?v=_bzqF05xsC4) ([versión escrita](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4))
+ * 📖 [Comience a analizar el rendimiento en tiempo de ejecución  |  Google Developers](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/)
+ * 📖 [Estado de la web | 2018_01_01](https://httparchive.org/reports/state-of-the-web?start=2018_01_01)
+ * 📖 [El peso de la página no importa](https://www.speedshop.co/2015/11/05/page-weight-doesnt-matter.html)
+ * 📖 [Lista de requerimiento para rendimiento front-end 2018 [PDF, Apple Pages]](https://www.smashingmagazine.com/2018/01/front-end-performance-checklist-2018-pdf-pages/)
+ * 📖 [Diseñando para pesaje de alto rendimiento, estética y velocidad - Por Lara Callender Hogan [eBook, Print]](http://designingforperformance.com/index.html)
+ * 📖 [Varvy - Glosario de rendimiento web](https://varvy.com/performance/)
+ * 📖 [fabkrum/web-performance-resources: Recopilación actualizada de valiosos recursos de rendimiento web](https://github.com/fabkrum/web-performance-resources)
+ * 📖 [Checkbot - Mejores prácticas de velocidad web](https://www.checkbot.io/guide/speed/)
 
 ---
 
