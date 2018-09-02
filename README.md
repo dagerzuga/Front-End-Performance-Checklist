@@ -45,8 +45,8 @@
 
 1. **[HTML](#html)**
 2. **[CSS](#css)**
-3. **[Fonts](#fonts)**
-4. **[Imágenes](#images)**
+3. **[Fuentes](#fuentes)**
+4. **[Imágenes](#imagenes)**
 5. **[JavaScript](#javascript)**
 6. **[Server](#server) (en progreso)**
 7. **[Frameworks JS](#performances-and-js-frameworks) (en progreso)**
@@ -296,19 +296,19 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
 
 **[⬆ volver arriba](#tabla-de-contenidos)**
 
-## Fonts
+## Fuentes
 
 ![fonts]
 
 * 📖 [A Book Apart, Webfont Handbook](https://abookapart.com/products/webfont-handbook)
 
-- [ ] **Webfont formats:** ![medium] You are using WOFF2 on your web project or application.
+- [ ] **formatos Webfont:** ![medium] Utilizar WOFF2 en tu proyecto web o aplicación.
 
     *¿Por qué?:*
-    > According to Google, the WOFF 2.0 Web Font compression format offers 30% average gain over WOFF 1.0. It's then good to use WOFF 2.0, WOFF 1.0 as a fallback and TTF.
+    > Según Google, el formato de compresión WOFF 2.0  ofrece un 30% de ganancia sobre el WOFF 1.0. Entonces, es bueno utilizar WOFF 2.0, y WOFF 1.0 y TTF como respaldo.
 
     *¿Cómo?:*
-    > Check before buying your new font that the provider gives you the WOFF2 format. If you are using a free font, you can always use Font Squirrel to generate all the formats you need.
+    > Antes de comprar una nueva fuente, verifique que el proveedor le brinde el formato WOFF2. Si estás utilizando una fuente gratuita, siempre puede utilizar Font Squirrel para generar todos los formatos necesarios.
 
     * 📖 [WOFF 2.0 – Learn more about the next generation Web Font Format and convert TTF to WOFF2](https://gist.github.com/sergejmueller/cf6b4f2133bcb3e2f64a)
     * 🛠 [Create Your Own @font-face Kits » Font Squirrel](https://www.fontsquirrel.com/tools/webfont-generator)
@@ -316,19 +316,19 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
     * 📖 [Using @font-face | CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/?ref=frontendchecklist)
     * 📖 [Can I use... WOFF2](https://caniuse.com/#feat=woff2)
 
-- [ ] **Use `preconnect` to load your fonts faster:** ![medium]
+- [ ] **Usar `preconnect` para cargar más rápido las fuentes:** ![medium]
 
     ```html
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     ```
 
     *¿Por qué?:*
-    > When you arrived on a website, your device needs to find out where your site lives and which server it needs to connect with. Your browser had to contact a DNS server and wait for the lookup complete before fetching the resource (fonts, CSS files...). Prefetches and preconnects allow the browser to lookup the DNS information and start establising a TCP connection to the server hosting the font file. This provides a performance boost because by the time the browser gets around to parsing the css file with the font information and discovering it needs to request a font file from the server, it will already have pre-resolved the DNS information and have an open connection to the server ready in its connection pool.
+    > Cuando llegas a un sitio web, tu dispositivo necesita averiguar de dónde es el sitio y a cual servidor necesita conectarse. El navegador necesita contactar con el servidor DNS y esperar que la búsqueda se complete antes de atraer los recursos (fuentes, CSS...). Preatracciones y preconecciones permiten al navegador buscar la información del DNS y establecer una concección TCP con el servidor de la fuente. Esto brinda una mejora en el rendimiento porque para el momento que el navegador termina de parsear los archivos CSS con la información de la fuente y se da cuenta que necesita solicitar el archivo de la fuente del servidor, ya tendrá preresuelta la información del DNS y tendrá conexión abierta con el servidor ya listo en su grupo de conexiones.
 
     *¿Cómo?:*
-    > ⁃ Before prefetching your webfonts, use webpagetest to evaluate your website <br>
-    ⁃ Look for teal colored DNS lookups and note the host that are being requested <br>
-    ⁃ Prefetch your webfonts in your `<head>` and add eventually these hostnames that you should prefetch too
+    > ⁃ Antes de recuperar las webfonts, utilice webpagetest para evaluar el sitio web <br>
+    ⁃ Busque las búsquedas DNS de color verde azulado y tenga en cuenta el host que se solicita <br>
+    ⁃ Recupere sus webfonts en su `<head>` y agregue eventualmente estos nombres de host que también debe captar previamente
 
     * 📖 [Faster Google Fonts with Preconnect - CDN Planet](https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/)
     * 📖 [Make Your Site Faster with Preconnect Hints | Viget](https://www.viget.com/articles/make-your-site-faster-with-preconnect-hints/)
@@ -336,33 +336,33 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
     * 📖 [A Comprehensive Guide to Font Loading Strategies—zachleat.com](https://www.zachleat.com/web/comprehensive-webfonts/#font-face)
     * 🛠 [typekit/webfontloader: Web Font Loader gives you added control when using linked fonts via @font-face.](https://github.com/typekit/webfontloader)
 
-- [ ] **Webfont size:** ![medium] Webfont sizes don't exceed 300kb (all variants included)
+- [ ] **Tamaño de la Webfont:** ![medium] Los tamaños de las Webfonts no superan los 300kb (incluidas todas las variantes)
 
  * 📖 [Font Bytes - Page Weight](https://httparchive.org/reports/page-weight#bytesFont)
 
-- [ ] **Prevent Flash or Invisible Text:** ![medium] Avoid transparent text until the Webfont is loaded
+- [ ] **Evitar texto invisible o flash:** ![medium] Evite texto transparente hasta que se cargue Webfont
 
  * 📖 [`font-display` for the Masses](https://css-tricks.com/font-display-masses/)
  * 📖 [CSS font-display: The Future of Font Rendering on the Web](https://www.sitepoint.com/css-font-display-future-font-rendering-web/)
 
 **[⬆ volver arriba](#tabla-de-contenidos)**
 
-## Images
+## Imagenes
 
 ![images]
 
  * 📖 [Image Bytes in 2018](https://httparchive.org/reports/page-weight#bytesImg)
 
-* [ ] **Images optimization:** ![high] Your images are optimized, compressed without direct impact to the end user.
+* [ ] **Optimización de imágenes:** ![high] Las imágenes están optimizadas, comprimidas sin impacto directo en el usuario final.
 
     *¿Por qué?:*
-    > Optimized images load faster in your browser and consume less data.
+    > Las imágenes optimizadas se cargan más rápido en el navegador y consumen menos datos.
 
     *¿Cómo?:*
-    > ⁃ Try using CSS3 effects when it's possible (instead of a small image) <br>
-    ⁃ When it's possible, use fonts instead of text encoded in your images <br>
-    ⁃ Use SVG <br>
-    ⁃ Use a tool and specify a level compression under 85.
+    > ⁃ Intenta utilizar efectos CSS3 cuando sea posible (en lugar de una imagen pequeña) <br>
+    ⁃ Cuando sea posible, utilizar fuentes en lugar de texto codificado en las imágenes <br>
+    ⁃ Utilizar SVG <br>
+    ⁃ Utilice una herramienta y especifique una compresión de nivel por debajo de 85.
 
     * 📖 [Image Optimization | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
     * 📖 [Essential Image Optimization - An eBook by Addy Osmani](https://images.guide/)
@@ -373,60 +373,60 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
     * 🛠 [SVGOMG - Optimize SVG vector graphics files](https://jakearchibald.github.io/svgomg/)
 
 
-* [ ] **Images format:** ![high] Choose your image format appropriately.
+* [ ] **Formato de imágenes:** ![high] Seleccione el formato de imagen adecuadamente.
 
     *¿Por qué?:*
-    > To ensure that your images don't slow your website, choose the format that will correspond to your image. If it's a photo, JPEG is most of the time more appropriate than PNG or GIF. But don't forget to look a the nex-gen formats which can reduce the size of your files. Each image format has pros and cons, it's important to know these to make the best choice possible.
+    > Para asegurarse que las imágenes no ralentizan tu sitio web, selecciona el formato que corresponda a la imagen. Si es una foto, JPEG es usualmente más adecuado que PNG o GIF. Pero no olvides revisar los formatos de siguiente generación que pueden reducir el formato de los archivos. Cada formato de imagen tiene ventajas y desventajas, es importante conocerlos para tomar la mejor decisión.
 
     *¿Cómo?:*
-    > ⁃ Use [Lighthouse](https://developers.google.com/web/tools/lighthouse/) to identify which images can eventually use **next-gen formats** (like JPEG 2000m JPEG XR or WebP) <br>
-    ⁃ Compare different formats, sometimes using PNG8 is better than PNG16, sometimes it's not.
+    > ⁃ Utiliza [Lighthouse](https://developers.google.com/web/tools/lighthouse/) para identificar cuales imagenes pueden, eventualmente utilizar **formatos de siguiente generación** (como  JPEG 2000m JPEG XR o WebP). <br>
+    ⁃ Compara diferentes formatos, a veces utilizar PNG8 es mejor que PNG16, a veces no lo es.
 
     * 📖 [Serve Images in Next-Gen Formats  |  Tools for Web Developers  |  Google Developers](https://developers.google.com/web/tools/lighthouse/audits/webp)
     * 📖 [What Is the Right Image Format for Your Website? — SitePoint](https://www.sitepoint.com/what-is-the-right-image-format-for-your-website/)
     * 📖 [PNG8 - The Clear Winner — SitePoint](https://www.sitepoint.com/png8-the-clear-winner/)
     * 📖 [8-bit vs 16-bit - What Color Depth You Should Use And Why It Matters - DIY Photography](https://www.diyphotography.net/8-bit-vs-16-bit-color-depth-use-matters/)
 
-- [ ] **Use vector image vs raster/bitmap:** ![medium] Prefer using vector image rather than bitmap images (when possible).
+- [ ] **Utilizar imagen vectorial vs raster/bitmap:** ![medium] Es preferible utilizar imágenes vectoriales en lugar de imágenes de bitmaps (cuando es posible).
 
     *¿Por qué?:*
-    > Vector images (SVG) tend to be smaller than images and SVG's are responsive and scale perfectly. These images can be animated and modified by CSS.
+    > Imágenes vectoriales (SVG) tienden a ser más pequeñas que los bitmaps y los SVG se escalan y redimensionan perfectamente. Estas imágenes pueden ser animadas y modificadas mediante CSS.
 
-* [ ] **Images dimensions:** ![medium] Set `width` and `height` attributes on `<img>` if the final rendered image size is known.
+* [ ] **Dimensiones de las imágenes:** ![medium] Establecer atributos `width` y `height` en los`<img>` si el tamaño final de la imagene es conocido.
 
     *¿Por qué?:*
-    > If height and width are set, the space required for the image is reserved when the page is loaded. However, without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout will change during loading (while the images load).
+    > Si el alto y ancho son establecidos el espacio requerido para la imagen es reservado cuando la página es cargada. Sin embargo, sin estos atributos, el navegador no conoce el tamaño de la imagen y no puede reservar el espacio apropiado para ella. El efecto será que el diseño de la página cambiará durante la carga (mientras se cargan las imágenes).
 
-* [ ] **Avoid using Base64 images:** ![medium] You could eventually convert tiny images to base64 but it's actually not the best practice.
+* [ ] **Evitar el uso de imágenes Base64 :** ![medium] Podrías eventualmente convertir imágenes diminutas a base 64, pero en realidad no es una buena práctica.
 
     * 📖 [Base64 Encoding & Performance, Part 1 and 2 by Harry Roberts](https://csswizardry.com/2017/02/base64-encoding-and-performance/)
     * 📖 [A closer look at Base64 image performance – The Page Not Found Blog](http://www.andygup.net/a-closer-look-at-base64-image-performance/)
     * 📖 [When to base64 encode images (and when not to) | David Calhoun](https://www.davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/)
    * 📖 [Base64 encoding images for faster pages | Performance and seo factors](https://varvy.com/pagespeed/base64-images.html)
 
-* [ ] **Lazy loading:** ![medium] Offscreen images are loaded lazily (A noscript fallback is always provided).
+* [ ] **Carga lenta:** ![medium] Las imágenes fuera de pantalla se cargan lentamente (siempre es proporcionado un noscript de respaldo).
 
     *¿Por qué?:*
-    > It will improve the response time of the current page and then avoid loading unnecessary images that the user may not need.
+    > Mejorará el tiempo de respuesta de la página actual y luego evitará cargar imágenes innecesarias que el usuario puede no necesitar.
 
     *¿Cómo?:*
-    > ⁃ Use [Lighthouse](https://developers.google.com/web/tools/lighthouse/) to identify how many **images are offscreen**. <br>
-    ⁃ Use a JavaScript plugin like the following to lazyload your images. Make sure you target offscreen images only. <br>
-    ⁃ Also make sure to lazyload alternative images shown at mouseover or upon other user actions.
+    > ⁃ Utiliza [Lighthouse](https://developers.google.com/web/tools/lighthouse/) para identificar cuantas **imágenes están fuera de pantalla**. <br>
+    ⁃ Utilizar un plugin de JavaScript como los siguientes para cargar lentamente las imágenes. Asegurate de seleccionar únicamente imágenes fuera de pantalla. <br>
+    ⁃ También asegurate de cargar lentamente imagenes alternativas que se muestren al pasar el ratón o sobre otras acciones del usuario.
 
     * 🛠 [verlok/lazyload: GitHub](https://github.com/verlok/lazyload)
     * 🛠 [aFarkas/lazysizes: GitHub](https://github.com/aFarkas/lazysizes/)
     * 📖 [Lazy Loading Images and Video  |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
     * 📖 [5 Brilliant Ways to Lazy Load Images For Faster Page Loads - Dynamic Drive Blog](http://blog.dynamicdrive.com/5-brilliant-ways-to-lazy-load-images-for-faster-page-loads/)
 
-* [ ] **Responsive images:** ![medium] Ensure to serve images that are close to your display size.
+* [ ] **Imágenes responsivas:** ![medium] Asegúrate de mostrar imágenes cercanas al tamaño de la pantalla.
 
     *¿Por qué?:*
-    > Small devices don't need images bigger than their viewport. It's recommended to have multiple versions of one image on different sizes.
+    > Los dispositivos pequeños no necesitan imágenes más grandes que su ventana gráfica. Se recomienda tener múltiples versiones de una imagen en diferentes tamaños.
 
     *¿Cómo?:*
-    > ⁃ Create different image sizes for the devices you want to target. <br>
-    ⁃ Use `srcset` and `picture` to deliver multiple variants of each image.
+    > ⁃ Crea diferentes tamaños de imagen para los dispositivos a los que quieres enfocar. <br>
+    ⁃ Utiliza `srcset` y `picture` para mostrar variaciones de las imagenes.
 
      * 📖 [Responsive images - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 
@@ -624,18 +624,18 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
 
 ### Vue
 
-## Performances and CMS
+## Rendimiento y CMS
 
 ### WordPress
 
 * 🛠 [Test Your Website Speed | WordPress Hosting by @WPEngine](https://wpengine.com/speed-tool/)
 
-#### Articles
+#### Artículos
 
  * 📖 [19 Tips to Speed Up WordPress Performance (Updated)](https://www.wpbeginner.com/wordpress-performance-speed/)
  * 📖 [Speed Up Your WordPress - How to Save Images Optimized for Web](https://www.wpbeginner.com/beginners-guide/speed-wordpress-save-images-optimized-web/)
 
-#### Plugins recommended
+#### Plugins recomendados
 
 * 🛠 [Caching Plugin for WordPress - Speed up your website with WP Rocket](https://wp-rocket.me/)
 * 🛠 [WP-Sweep | WordPress.org](https://wordpress.org/plugins/wp-sweep/)
@@ -643,9 +643,9 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
 
 ---
 
-## Translations
+## Traducciones
 
-The Front-End Performance Checklist wants to also be available in other languages! Don't hesitate to submit your contribution!
+¡Lista de requerimientos para el rendimiento front-end quiere estar disponible en otros idiomas! ¡No dudes en enviar su contribución!
 
 * 🇵🇹 Portuguese: [fernandofawkes/Front-End-Performance-Checklist](https://github.com/fernandofawkes/Front-End-Performance-Checklist)
 * 🇨🇳 Chinese: [JohnsenZhou/Front-End-Performance-Checklist](https://github.com/JohnsenZhou/Front-End-Performance-Checklist)
@@ -653,25 +653,25 @@ The Front-End Performance Checklist wants to also be available in other language
 * 🇫🇷 French: [WilliamDASILVA/Front-End-Performance-Checklist](https://github.com/WilliamDASILVA/Front-End-Performance-Checklist)
 * 🇰🇷 Korean: [ParkSB/Front-End-Performance-Checklist](https://github.com/ParkSB/Front-End-Performance-Checklist)
 
-## Contributing
+## Contribuir
 
-**Open an issue or a pull request to suggest changes or additions.**
+**Abre un issue o un pull request para sugerir cambios o adiciones.**
 
-## Support
+## Apoyo
 
-If you have any question or suggestion, don't hesitate to use Gitter or Twitter:
+Si tiene alguna pregunta o sugerencia, no dude en usar Gitter o Twitter:
 
-* [Chat on Discord](https://discord.gg/btHQRkm)
+* [Chat en Discord](https://discord.gg/btHQRkm)
 * [Facebook](https://www.facebook.com/frontendchecklist/)
 * [Twitter](https://twitter.com/thedaviddias)
 
-## Author
+## Autor
 
-**Build with ❤️ by [David Dias](https://github.com/thedaviddias) at [@influitive](https://influitive.com/) 🇨🇦**
+**Hecho con ❤️ por [David Dias](https://github.com/thedaviddias) en [@influitive](https://influitive.com/) 🇨🇦**
 
-## Contributors
+## Colaboradores
 
-This project exists thanks to all the people who contribute. [[Contribute]](.github/CONTRIBUTING.md).
+Este proyecto existe gracias a todas las personas que contribuyen. [[Contribuir]](.github/CONTRIBUTING.md).
 <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist/graphs/contributors">
     <img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" />
 </a>
@@ -679,14 +679,14 @@ This project exists thanks to all the people who contribute. [[Contribute]](.git
 
 ## Backers
 
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
+¡Gracias a todos nuestros backers! 🙏 [[Conviertete en un backer](https://opencollective.com/front-end-checklist#backer)]
 
 <a href="https://opencollective.com/front-end-checklist#backers" target="_blank"><img src="https://opencollective.com/front-end-checklist/backers.svg?width=890"></a>
 
 
-## Sponsors
+## Patrocinadores
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/front-end-checklist#sponsor)]
+Apoya este proyecto convirtiéndote en un patrocinador. Tu logo aparecerá aquí con un enlace a tu sitio web. [[Conviértete en patrocinador] (https://opencollective.com/front-end-checklist#sponsor)]
 
 <a href="https://opencollective.com/front-end-checklist/sponsor/0/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/front-end-checklist/sponsor/1/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/1/avatar.svg"></a>
@@ -699,11 +699,11 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/front-end-checklist/sponsor/8/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/front-end-checklist/sponsor/9/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/9/avatar.svg"></a>
 
-## License
+## Licencia
 
 [MIT](LICENSE)
 
-All icons are provided by [Icons8](https://icons8.com/)
+Todos los iconos son provistos por [Icons8](https://icons8.com/)
 
 **[⬆ volver arriba](#tabla-de-contenidos)**
 
