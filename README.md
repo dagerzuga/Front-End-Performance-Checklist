@@ -8,7 +8,6 @@
 </h1>
 
 <h4 align="center">🎮 La única lista de requerimientos para el rendimiento del front-end que corre más rápido que otras.</h4>
-<h4 align="center">🎮 </h4>
 <p align="center">Una regla simple: “Diseña y programa con rendimiento en mente”</p>
 
 <p align="center">
@@ -28,6 +27,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist">🇺🇸</a>
   <a href="https://github.com/JohnsenZhou/Front-End-Performance-Checklist">🇨🇳</a>
   <a href="https://github.com/WilliamDASILVA/Front-End-Performance-Checklist">🇫🇷</a>
   <a href="https://github.com/ParkSB/Front-End-Performance-Checklist">🇰🇷</a>  
@@ -74,20 +74,24 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
  * 🛠 [Treo: Control de velocidad de página](https://treo.sh/?ref=perfchecklist)
  * 🛠 [GTmetrix | Optimización de velocidad y rendimiento del sitio web](https://gtmetrix.com/)
  * 🛠 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+ * 🛠 [Web.dev](https://web.dev/measure)
  * 🛠 [Prueba de velocidad del sitio Pingdom](https://tools.pingdom.com)
  * 📖 [Pagespeed - La herramienta y la guía de optimización](https://varvy.com/pagespeed/)
  * 📖 [Haz más rápida la web | Google Developers](https://developers.google.com/speed/)
  * 🛠 [Sitespeed.io - Bienvenido al maravilloso mundo del rendimiento web](https://www.sitespeed.io/)
  * 🛠 [Calibre](https://calibreapp.com/)
  * 🛠 [Prueba de velocidad del sitio web | Verificación del rendimiento web &raquo; Dotcom-Tools](https://www.dotcom-tools.com/website-speed-test.aspx)
- * 🛠 [Monitoreo de actividad del sitio web y del servidor - Pingdom](https://www.pingdom.com/product/uptime-monitoring/) ([Free Signup Link](https://www.pingdom.com/free))
- * 🛠 [Robot de tiempo de actividad](https://uptimerobot.com)
+ * 🛠 [Pingdom - Monitoreo de actividad del sitio web y del servidor](https://www.pingdom.com/product/uptime-monitoring/) ([Free Signup Link](https://www.pingdom.com/free))
+ * 🛠 [Uptime Robot](https://uptimerobot.com)
  * 🛠 [SpeedCurve: Monitor de rendimiento front-end](https://speedcurve.com)
  * 🛠 [PWMetrics - Herramienta CLI y librería para recopilar métricas de rendimiento](https://github.com/paulirish/pwmetrics)
  * 🛠 [Varvy - Optimización de velocidad de la página]( https://varvy.com/pagespeed/)
  * 🛠 [Lighthouse - Google]( https://developers.google.com/web/tools/lighthouse/#devtools)
  * 🛠 [Checkbot browser extension - Verifica las mejores prácticas de rendimiento web](https://www.checkbot.io/)
  * 🛠 [Yellow Lab Tools | Prueba en línea para ayudar a acelerar páginas web pesadas](https://yellowlab.tools/)
+ * 🛠 [Speedrank - Monitoreo del rendimiento web](https://speedrank.app/)
+ * 🛠 [DebugBear - Monitorear el rendimiento del sitio y la puntuación de Lighthouse](https://www.debugbear.com/)
+ * 🛠 [packtracker.io - Comprobar el tamaño del paquete de webopack en cada pull request](https://packtracker.io/)
 
 ### Referencias (inglés)
 
@@ -100,6 +104,7 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
  * 📖 [Varvy - Glosario de rendimiento web](https://varvy.com/performance/)
  * 📖 [fabkrum/web-performance-resources: Recopilación actualizada de valiosos recursos de rendimiento web](https://github.com/fabkrum/web-performance-resources)
  * 📖 [Checkbot - Mejores prácticas de velocidad web](https://www.checkbot.io/guide/speed/)
+ * 🛠 [Progressive Tooling - A list of community-built, third-party tools that can be used to improve page performance](https://progressivetooling.com/)
 
 ---
 
@@ -257,7 +262,7 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
     * 🛠 [PurgeCSS](https://github.com/FullHuman/purgecss)
     * 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
-* [ ] **CSS Crítico:** ![high] El CSS crítico (o "arriba del doblez") recoge todo el CSS utilizado para renderizar la parte visible de la página. Se incrusta antes de su llamada CSS principal y entre `<style> </ style>` en una sola línea (si es posible, se lo minimiza).
+* [ ] **CSS Crítico:** ![high] El CSS crítico (o "arriba del doblez", "above the fold" en inglés) recoge todo el CSS utilizado para renderizar la parte visible de la página. Se incrusta antes de su llamada CSS principal y entre `<style> </ style>` en una sola línea (si es posible, se lo minimiza).
 
     *¿Por qué?:*
     > Enlinear CSS crítico ayuda a acelerar el procesamiento de las páginas web, reduciendo la cantidad de solicitudes al servidor.
@@ -404,7 +409,7 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
     * 📖 [When to base64 encode images (and when not to) | David Calhoun](https://www.davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/)
    * 📖 [Base64 encoding images for faster pages | Performance and seo factors](https://varvy.com/pagespeed/base64-images.html)
 
-* [ ] **Carga lenta:** ![medium] Las imágenes fuera de pantalla se cargan lentamente (siempre es proporcionado un noscript de respaldo).
+* [ ] **Carga lenta:** ![medium] " Lazy loading" en inglés, las imágenes fuera de pantalla se cargan lentamente (siempre es proporcionado un noscript de respaldo).
 
     *¿Por qué?:*
     > Mejorará el tiempo de respuesta de la página actual y luego evitará cargar imágenes innecesarias que el usuario puede no necesitar.
@@ -648,11 +653,13 @@ Lista de herramientas que puedes utilizar para probar o monitorear tu sitio o ap
 
 ¡Lista de requerimientos para el rendimiento front-end quiere estar disponible en otros idiomas! ¡No dudes en enviar su contribución!
 
-* 🇵🇹 Portuguese: [fernandofawkes/Front-End-Performance-Checklist](https://github.com/fernandofawkes/Front-End-Performance-Checklist)
-* 🇨🇳 Chinese: [JohnsenZhou/Front-End-Performance-Checklist](https://github.com/JohnsenZhou/Front-End-Performance-Checklist)
-* 🇷🇺 Russian: [lex111/Front-End-Performance-Checklist](https://github.com/lex111/Front-End-Performance-Checklist)
-* 🇫🇷 French: [WilliamDASILVA/Front-End-Performance-Checklist](https://github.com/WilliamDASILVA/Front-End-Performance-Checklist)
-* 🇰🇷 Korean: [ParkSB/Front-End-Performance-Checklist](https://github.com/ParkSB/Front-End-Performance-Checklist)
+* 🇺🇸 Inglés: [thedaviddias/Front-End-Performance-Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist)
+* 🇵🇹 Portugués: [fernandofawkes/Front-End-Performance-Checklist](https://github.com/fernandofawkes/Front-End-Performance-Checklist)
+* 🇨🇳 Chino: [JohnsenZhou/Front-End-Performance-Checklist](https://github.com/JohnsenZhou/Front-End-Performance-Checklist)
+* 🇷🇺 Ruso: [lex111/Front-End-Performance-Checklist](https://github.com/lex111/Front-End-Performance-Checklist)
+* 🇫🇷 Francés: [WilliamDASILVA/Front-End-Performance-Checklist](https://github.com/WilliamDASILVA/Front-End-Performance-Checklist)
+* 🇰🇷 Coreano: [ParkSB/Front-End-Performance-Checklist](https://github.com/ParkSB/Front-End-Performance-Checklist)
+* 🇻🇮 Vietnamita : [huynhan147/Front-End-Performance-Checklist](https://github.com/huynhan147/FrontEnd-Performance-Checklist)
 
 ## Contribuir
 
